@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Results";
+}
+
+<h2>Search Results</h2>
+
+@if (ViewBag.SearchString != null)
+{
+    <div>Вы искали: @ViewBag.SearchString</div>
+}
+
+@if (ViewBag.SearchResults != null)
+{
+    <div>Вот ваши результаты: @ViewBag.SearchResults</div>
+}
